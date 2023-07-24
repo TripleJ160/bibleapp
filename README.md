@@ -28,8 +28,8 @@ The Bible Study App is a web-based application that allows users to explore and 
 1. Clone the repository:
 
 ```
-git clone https://github.com/yourusername/bible-study-app.git
-cd bible-study-app
+git clone https://github.com/TripleJ160/bibleapp/
+cd bibleapp
 ```
 
 2. Install the required dependencies:
