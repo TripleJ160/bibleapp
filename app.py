@@ -30,92 +30,119 @@ with st.sidebar:
     st.write('Made with ❤️ by [Johan](https://github.com/TripleJ160)')
 
 
-def show_pdf(file_path):
-    with open(file_path, "rb") as f:
-        base64_pdf = base64.b64encode(f.read()).decode('utf-8')
-    pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="700" height="500" type="application/pdf"></iframe>'
-    st.markdown(pdf_display, unsafe_allow_html=True)
+def show_pdf(file_url):
+    pdf_embed_code = f'<iframe src="{file_url}" width="700" height="500" type="application/pdf"></iframe>'
+    st.markdown(pdf_embed_code, unsafe_allow_html=True)
 
 def show_content(book):
-    folder_path = "./Books/Bible/NewTestament"
     if book == "Matthew":
-        pdf_file = f"{folder_path}/MatthewOEV.pdf"
-        show_pdf(pdf_file)
+        file_id = '1PBMShoyok8oO-elmF55KW4gB6cy4yhxY'
+        file_url = f'https://drive.google.com/file/d/{file_id}/preview'
+        show_pdf(file_url)
     elif book == "Mark":
-        pdf_file = f"{folder_path}/MarkOEV.pdf"
-        show_pdf(pdf_file)
+        file_id = '1Dvn-CfxwrDJRGMOe83DbcqZU83XvpX1d'
+        file_url = f'https://drive.google.com/file/d/{file_id}/preview'
+        show_pdf(file_url)
     elif book == "Luke":
-        pdf_file = f"{folder_path}/LukeOEV.pdf"
-        show_pdf(pdf_file)
+        file_id = '1utUYxshKZlo2xdlPeXkT6u9MU4Y-8sXb'
+        file_url = f'https://drive.google.com/file/d/{file_id}/preview'
+        show_pdf(file_url)
     elif book == "John":
-        pdf_file = f"{folder_path}/JohnOEV.pdf"
-        show_pdf(pdf_file)
+        file_id = '1WVpTHioNAgdpPkTSZ8_29rxK6QDJi_S5'
+        file_url = f'https://drive.google.com/file/d/{file_id}/preview'
+        show_pdf(file_url)
     elif book == "Acts":
-        pdf_file = f"{folder_path}/ActsOEV.pdf"
-        show_pdf(pdf_file)
+        file_id = '1A2XVLo32sSPSdfHSNCGMoavq2Ryn7ihk'
+        file_url = f'https://drive.google.com/file/d/{file_id}/preview'
+        show_pdf(file_url)
     elif book == "Romans":
-        pdf_file = f"{folder_path}/RomansOEV.pdf"
-        show_pdf(pdf_file)
+        file_id = '1ZoGBY-WThYG9MX_PY3imPKYsMQ7w6jSx'
+        file_url = f'https://drive.google.com/file/d/{file_id}/preview'
+        show_pdf(file_url)
     elif book == "1 Corinthians":
-        pdf_file = f"{folder_path}/1 CorinthiansOEV.pdf"
-        show_pdf(pdf_file)
+        file_id = '1yAT1kdjk-pwUMDtreov3tcTXKo8fYIXl'
+        file_url = f'https://drive.google.com/file/d/{file_id}/preview'
+        show_pdf(file_url)
     elif book == "2 Corinthians":
-        pdf_file = f"{folder_path}/2 CorinthiansOEV.pdf"
-        show_pdf(pdf_file)
+        file_id = '1wZcMu_PIY0yCVBmNBo46F9MHL8bmRKr7'
+        file_url = f'https://drive.google.com/file/d/{file_id}/preview'
+        show_pdf(file_url)
     elif book == "Galatians":
-        pdf_file = f"{folder_path}/GalatiansOEV.pdf"
-        show_pdf(pdf_file)
+        file_id = '1sidDVgMJKLzNDrQ-dMlpIgEGWvbG6sH9'
+        file_url = f'https://drive.google.com/file/d/{file_id}/preview'
+        show_pdf(file_url)
     elif book == "Ephesians":
-        pdf_file = f"{folder_path}/EphesiansOEV.pdf"
-        show_pdf(pdf_file)
+        file_id = '1_GKbBRdSqamTDxOTJBCXvR9OlvoBu5OO'
+        file_url = f'https://drive.google.com/file/d/{file_id}/preview'
+        show_pdf(file_url)
     elif book == "Philippians":
-        pdf_file = f"{folder_path}/PhilippiansOEV.pdf"
-        show_pdf(pdf_file)
+        file_id = '19OLUKIcWe_iY_vWErQoYmabwl4zpjzVf'
+        file_url = f'https://drive.google.com/file/d/{file_id}/preview'
+        show_pdf(file_url)
     elif book == "Colossians":
-        pdf_file = f"{folder_path}/ColossiansOEV.pdf"
-        show_pdf(pdf_file)
+        file_id = '1KhdvYtOrSG-yCYhllWljbqWeZQ6eb03b'
+        file_url = f'https://drive.google.com/file/d/{file_id}/preview'
+        show_pdf(file_url)
     elif book == "1 Thessalonians":
-        pdf_file = f"{folder_path}/1 ThessaloniansOEV.pdf"
-        show_pdf(pdf_file)
+        file_id = '1-CXoIJ8UmAIyX6_9geoEWBG6ERmV0OQK'
+        file_url = f'https://drive.google.com/file/d/{file_id}/preview'
+        show_pdf(file_url)
     elif book == "2 Thessalonians":
-        pdf_file = f"{folder_path}/2 ThessaloniansOEV.pdf"
-        show_pdf(pdf_file)
+        file_id = '1acYpdLIoTQWS_NYWL1P_G-48yrg_BWiA'
+        file_url = f'https://drive.google.com/file/d/{file_id}/preview'
+        show_pdf(file_url)
     elif book == "1 Timothy":
-        pdf_file = f"{folder_path}/1 TimothyOEV.pdf"
-        show_pdf(pdf_file)
+        file_id = '1akLCNTsnsTFSiNCZzgGnmDoYGdclCDPX'
+        file_url = f'https://drive.google.com/file/d/{file_id}/preview'
+        show_pdf(file_url)
     elif book == "2 Timothy":
-        pdf_file = f"{folder_path}/2 TimothyOEV.pdf"
-        show_pdf(pdf_file)
+        file_id = '10Mzcj4vvO_OgovnnXPyzuo64N2J-ucwB'
+        file_url = f'https://drive.google.com/file/d/{file_id}/preview'
+        show_pdf(file_url)
     elif book == "Titus":
-        pdf_file = f"{folder_path}/TitusOEV.pdf"
-        show_pdf(pdf_file)
+        file_id = '13byLHjosMJwYBx47Mbf0d8ldJTwwIGNa'
+        file_url = f'https://drive.google.com/file/d/{file_id}/preview'
+        show_pdf(file_url)
     elif book == "Philemon":
-        pdf_file = f"{folder_path}/PhilemonOEV.pdf"
-        show_pdf(pdf_file)
+        file_id = '1FI0bEgZAUWUJlMWOOiWNORFf0ooqQJdQ'
+        file_url = f'https://drive.google.com/file/d/{file_id}/preview'
+        show_pdf(file_url)
     elif book == "Hebrews":
-        pdf_file = f"{folder_path}/HebrewsOEV.pdf"
-        show_pdf(pdf_file)
+        file_id = '1_fcN7VXlwyw8BON_GAyUNmitzfxEei07'
+        file_url = f'https://drive.google.com/file/d/{file_id}/preview'
+        show_pdf(file_url)
     elif book == "James":
-        pdf_file = f"{folder_path}/JamesOEV.pdf"
-        show_pdf(pdf_file)
+        file_id = '1BiKc77B1DIXFlzcRZ8At8eIZSR7gmVrj'
+        file_url = f'https://drive.google.com/file/d/{file_id}/preview'
+        show_pdf(file_url)
     elif book == "1 Peter":
-        pdf_file = f"{folder_path}/1 PeterOEV.pdf"
-        show_pdf(pdf_file)
+        file_id = '1rZVqvrjyVZ7wnTJyzHQXcR7CssFkLrff'
+        file_url = f'https://drive.google.com/file/d/{file_id}/preview'
+        show_pdf(file_url)
     elif book == "2 Peter":
-        pdf_file = f"{folder_path}/2 PeterOEV.pdf"
-        show_pdf(pdf_file)
+        file_id = '1C-J3_tdztnibY6lBLtBFVnBjPCSlS5vB'
+        file_url = f'https://drive.google.com/file/d/{file_id}/preview'
+        show_pdf(file_url)
     elif book == "1 John":
-        pdf_file = f"{folder_path}/1 JohnOEV.pdf"
-        show_pdf(pdf_file)
+        file_id = '15wyoRDnKxVDcV14JJ1NHI5VuTHEAsE6Q'
+        file_url = f'https://drive.google.com/file/d/{file_id}/preview'
+        show_pdf(file_url)
     elif book == "2 John":
-        pdf_file = f"{folder_path}/2 JohnOEV.pdf"
-        show_pdf(pdf_file)
+        file_id = '195SBkMW8Xf9sMet3PZMoNEuLfWN-Xx48'
+        file_url = f'https://drive.google.com/file/d/{file_id}/preview'
+        show_pdf(file_url)
     elif book == "3 John":
-        pdf_file = f"{folder_path}/3 JohnOEV.pdf"
-        show_pdf(pdf_file)
+        file_id = '1W2H1o-MfkmDHoLiymtZqER7cxk9PSoxo/'
+        file_url = f'https://drive.google.com/file/d/{file_id}/preview'
+        show_pdf(file_url)
     elif book == "Jude":
-        pdf_file = f"{folder_path}/JudeOEV.pdf"
-        show_pdf(pdf_file)
+        file_id = '1I-53s0pH72Sj1eEUvhGviCM7IzQbS5tm'
+        file_url = f'https://drive.google.com/file/d/{file_id}/preview'
+        show_pdf(file_url)
+    elif book == "Revelations":
+        file_id = '1AvAVZ60cMZGOm34t9sSGWkxmkl-xrkyj'
+        file_url = f'https://drive.google.com/file/d/{file_id}/preview'
+        show_pdf(file_url)
 
 load_dotenv()
 def main():
@@ -131,6 +158,7 @@ def main():
 
     st.header(f"Content for {selected_book}")
     show_content(selected_book)
+
     
 
     #pdf = st.file_uploader("Upload your PDF!", type='pdf')
