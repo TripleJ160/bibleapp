@@ -14,6 +14,8 @@ from langchain.callbacks import get_openai_callback
 import base64
 import os
 
+st.set_page_config(page_title="Bible Study App", page_icon="📖")
+
 
 with st.sidebar:
     st.title('🕮 Bible Study App')
