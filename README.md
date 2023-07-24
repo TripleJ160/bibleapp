@@ -1,7 +1,6 @@
 
 # Bible Study App
-
-![Bible Study App](https://github.com/TripleJ160/bibleapp)
+![image](https://github.com/TripleJ160/bibleapp/assets/83926918/0b04755f-0816-4198-a18b-552c0bbd6c1b) ![Bible Study App](https://github.com/TripleJ160/bibleapp)
 
 ## Overview
 
