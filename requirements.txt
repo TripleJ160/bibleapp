@@ -6,3 +6,4 @@ faiss-cpu==1.7.4
 streamlit-extras
 altair==4.1.0
 streamlit
+openai
