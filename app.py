@@ -22,6 +22,8 @@ with st.sidebar:
     - [Streamlit](https://streamlit.io/)
     - [LangChain](https://python.langchain.com/)
     - [OpenAI](https://platform.openai.com/docs/models) LLM model
+                
+
  
     ''')
     avs.add_vertical_space(5)
@@ -37,61 +39,83 @@ def show_pdf(file_path):
 def show_content(book):
     folder_path = "./Books/Bible/NewTestament"
     if book == "Matthew":
-        st.write("Content for Matthew")
-        pdf_file = f"{folder_path}/MatthewFBV.pdf"
+        pdf_file = f"{folder_path}/MatthewOEV.pdf"
         show_pdf(pdf_file)
     elif book == "Mark":
-        st.write("Content for Mark")
-        pdf_file = f"{folder_path}/MarkFBV.pdf"
+        pdf_file = f"{folder_path}/MarkOEV.pdf"
         show_pdf(pdf_file)
     elif book == "Luke":
-        st.write("Content for Luke")
+        pdf_file = f"{folder_path}/LukeOEV.pdf"
+        show_pdf(pdf_file)
     elif book == "John":
-        st.write("Content for John")
+        pdf_file = f"{folder_path}/JohnOEV.pdf"
+        show_pdf(pdf_file)
     elif book == "Acts":
-        st.write("Content for Acts")
+        pdf_file = f"{folder_path}/ActsOEV.pdf"
+        show_pdf(pdf_file)
     elif book == "Romans":
-        st.write("Content for Romans")
+        pdf_file = f"{folder_path}/RomansOEV.pdf"
+        show_pdf(pdf_file)
     elif book == "1 Corinthians":
-        st.write("Content for 1 Corinthians")
+        pdf_file = f"{folder_path}/1 CorinthiansOEV.pdf"
+        show_pdf(pdf_file)
     elif book == "2 Corinthians":
-        st.write("Content for 2 Corinthians")
+        pdf_file = f"{folder_path}/2 CorinthiansOEV.pdf"
+        show_pdf(pdf_file)
     elif book == "Galatians":
-        st.write("Content for Galatians")
+        pdf_file = f"{folder_path}/GalatiansOEV.pdf"
+        show_pdf(pdf_file)
     elif book == "Ephesians":
-        st.write("Content for Ephesians")
+        pdf_file = f"{folder_path}/EphesiansOEV.pdf"
+        show_pdf(pdf_file)
     elif book == "Philippians":
-        st.write("Content for Philippians")
+        pdf_file = f"{folder_path}/PhilippiansOEV.pdf"
+        show_pdf(pdf_file)
     elif book == "Colossians":
-        st.write("Content for Colossians")
+        pdf_file = f"{folder_path}/ColossiansOEV.pdf"
+        show_pdf(pdf_file)
     elif book == "1 Thessalonians":
-        st.write("Content for 1 Thessalonians")
+        pdf_file = f"{folder_path}/1 ThessaloniansOEV.pdf"
+        show_pdf(pdf_file)
     elif book == "2 Thessalonians":
-        st.write("Content for 2 Thessalonians")
+        pdf_file = f"{folder_path}/2 ThessaloniansOEV.pdf"
+        show_pdf(pdf_file)
     elif book == "1 Timothy":
-        st.write("Content for 1 Timothy")
+        pdf_file = f"{folder_path}/1 TimothyOEV.pdf"
+        show_pdf(pdf_file)
     elif book == "2 Timothy":
-        st.write("Content for 2 Timothy")
+        pdf_file = f"{folder_path}/2 TimothyOEV.pdf"
+        show_pdf(pdf_file)
     elif book == "Titus":
-        st.write("Content for Titus")
+        pdf_file = f"{folder_path}/TitusOEV.pdf"
+        show_pdf(pdf_file)
     elif book == "Philemon":
-        st.write("Content for Philemon")
+        pdf_file = f"{folder_path}/PhilemonOEV.pdf"
+        show_pdf(pdf_file)
     elif book == "Hebrews":
-        st.write("Content for Hebrews")
+        pdf_file = f"{folder_path}/HebrewsOEV.pdf"
+        show_pdf(pdf_file)
     elif book == "James":
-        st.write("Content for James")
+        pdf_file = f"{folder_path}/JamesOEV.pdf"
+        show_pdf(pdf_file)
     elif book == "1 Peter":
-        st.write("Content for 1 Peter")
+        pdf_file = f"{folder_path}/1 PeterOEV.pdf"
+        show_pdf(pdf_file)
     elif book == "2 Peter":
-        st.write("Content for 2 Peter")
+        pdf_file = f"{folder_path}/2 PeterOEV.pdf"
+        show_pdf(pdf_file)
     elif book == "1 John":
-        st.write("Content for 1 John")
+        pdf_file = f"{folder_path}/1 JohnOEV.pdf"
+        show_pdf(pdf_file)
     elif book == "2 John":
-        st.write("Content for 2 John")
+        pdf_file = f"{folder_path}/2 JohnOEV.pdf"
+        show_pdf(pdf_file)
     elif book == "3 John":
-        st.write("Content for 3 John")
+        pdf_file = f"{folder_path}/3 JohnOEV.pdf"
+        show_pdf(pdf_file)
     elif book == "Jude":
-        st.write("Content for Jude")
+        pdf_file = f"{folder_path}/JudeOEV.pdf"
+        show_pdf(pdf_file)
 
 load_dotenv()
 def main():
@@ -115,7 +139,7 @@ def main():
     #pdf_reader = PdfReader('MatthewFBV.pdf')
 
     folder_path = "./Books/Bible/NewTestament"
-    pdf = f"{folder_path}/{selected_book}FBV.pdf"
+    pdf = f"{folder_path}/{selected_book}OEV.pdf"
     print(pdf)
     pdf_reader = PdfReader(pdf)
     text = " "
@@ -133,7 +157,7 @@ def main():
     #embedding
     
     store_name = pdf[:-4]
-    st.write(store_name)
+    #st.write(store_name)
     
     if os.path.exists(f"{store_name}.pkl"):
         with open(f"{store_name}.pkl", "rb") as f:
