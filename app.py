@@ -1,4 +1,5 @@
 import streamlit as st
+import openai
 from dotenv import load_dotenv
 import pickle
 from PyPDF2 import PdfReader
@@ -146,6 +147,7 @@ def show_content(book):
 
 load_dotenv()
 def main():
+    openai.api_key = st.secrets["api_secret"]
     st.sidebar.title("Select a Book")
     selected_book = st.sidebar.selectbox("Choose a Book", [
         "Matthew", "Mark", "Luke", "John", "Acts",
