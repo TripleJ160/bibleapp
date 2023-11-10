@@ -23,6 +23,10 @@ The Bible Study App is a web-based application that allows users to explore and 
 
 [Live Demo](https://bibleai.streamlit.app/)
 
+## Screenshot
+![image](https://github.com/TripleJ160/bibleapp/assets/83926918/7cbcaca2-8359-46fd-a2e5-856b3052f04e)
+
+
 ## Installation
 
 1. Clone the repository:
