@@ -149,8 +149,8 @@ def show_content(book):
 
 load_dotenv()
 def main():
-    #openai.api_key = st.secrets["OPENAI_API_KEY"]
-    openai.api_key = os.getenv["OPENAI_API_KEY"]
+    openai.api_key = st.secrets["OPENAI_API_KEY"]
+    #openai.api_key = os.getenv["OPENAI_API_KEY"]
     st.sidebar.title("Select a Book")
     selected_book = st.sidebar.selectbox("Choose a Book", [
         "Matthew", "Mark", "Luke", "John", "Acts",
