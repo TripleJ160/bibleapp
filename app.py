@@ -1,6 +1,5 @@
 import streamlit as st
 import openai
-from openai import api_re
 from dotenv import load_dotenv
 import pickle
 from PyPDF2 import PdfReader
