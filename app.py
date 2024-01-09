@@ -10,9 +10,10 @@ from langchain.llms import OpenAI
 from langchain_community.chat_models import ChatOpenAI
 from langchain.chains.question_answering import load_qa_chain
 from streamlit_extras import add_vertical_space as avs
-from langchain.callbacks import get_openai_callback
+from langchain_community.callbacks import get_openai_callback
 import base64
 import os
+
 
 st.set_page_config(page_title="Bible Study App", page_icon="📖")
 
