@@ -5,9 +5,9 @@ import pickle
 from PyPDF2 import PdfReader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.embeddings.openai import OpenAIEmbeddings
-from langchain.vectorstores import FAISS
+from langchain_community.vectorstores import FAISS
 from langchain.llms import OpenAI
-from langchain.chat_models import ChatOpenAI
+from langchain_community.chat_models import ChatOpenAI
 from langchain.chains.question_answering import load_qa_chain
 from streamlit_extras import add_vertical_space as avs
 from langchain.callbacks import get_openai_callback
