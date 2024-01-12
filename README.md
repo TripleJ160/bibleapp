@@ -1,5 +1,5 @@
 
-# Bible Study App
+# Bible Study App (Deprecated)
 
 ## Overview
 
